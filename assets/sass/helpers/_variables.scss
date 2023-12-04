@@ -1,0 +1,32 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+// fonts
+$base-font-size: 15;
+$base-font: 'Urbanist', sans-serif;
+$heading-font: 'Urbanist', sans-serif;
+
+// color
+$body-color: #F2F5F8;//
+$white: #fff;
+$black: #000;//
+$light: #DFDFDF;//
+$small-black:#1B1B1B;//
+$small-black-s2:#616161;//
+$small-black-s3:#050505;//
+$cyan: #4E4D4D;//
+$cyan-s2: #383838;//
+
+$theme-primary-color: #fff;//
+$theme-primary-color-s2: #000;//
+$section-color: #EAE6DC;//
+$text-color:#A48F5B;//
+$text-light-color: #424740;//
+$heading-color:$black;
+$border-color: #D9D9D9;//
+$border-color-s2: #8A8A8A;//
+$border-color-s3: #A8A8A8;//

@@ -1,0 +1,198 @@
+.theme-btn {
+	display: inline-block;
+	border: 0;
+	z-index: 1;
+	position: relative;
+	padding: 14px 40px;
+	color: $black;
+	font-family: $base-font;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: capitalize;
+	transition: all .3s ease-in-out;
+	overflow: hidden;
+	background: $light;
+
+
+	@include media-query(991px) {
+		font-size: 14px;
+	}
+
+	@include media-query(767px) {
+		padding: 8px 18px;
+		font-size: 14px;
+	}
+}
+
+.theme-btn-s2 {
+	background: $theme-primary-color;
+	color: $text-color;
+	display: inline-block;
+	padding: 15px 35px;
+	border-radius: 8px;
+	text-transform: capitalize;
+	z-index: 1;
+	position: relative;
+	border: transparent;
+	color: $white;
+	text-align: center;
+	font-family: Sora;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 30px;
+	transition: opacity 0.5s ease-out;
+
+	&:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 55px;
+		@include linear-gradient-bg(left, #00ded8, #00a7d5);
+		transition: opacity 0.5s ease-out;
+		opacity: 0;
+		z-index: -1;
+	}
+
+	@include media-query(991px) {
+		font-size: 14px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: darken($theme-primary-color, 5%);
+		// @include linear-gradient-bg(left, #00ded8, #00a7d5);
+		color: $white;
+	}
+
+	&:hover:after {
+		opacity: 1;
+	}
+
+	@include media-query(767px) {
+		padding: 8px 18px;
+		font-size: 12px;
+	}
+}
+
+
+
+
+.open-color-icon {
+	position: fixed;
+	right: 0;
+	top: 45%;
+	transform: translateY(-50%);
+	z-index: 9999;
+}
+
+.switcher-open {
+	width: 50px;
+	height: 50px;
+	background: #1B1B1B;
+	transition: all 0.3s;
+	border: transparent;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	i {
+		font-size: 24px;
+		line-height: 50px;
+		color: $white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+		transition: all 0.3s;
+		cursor: pointer;
+		animation-name: spin;
+		animation-duration: 4000ms;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		&.ti-close{
+			display: none;
+		}
+	}
+
+}
+
+.color-bar {
+	width: 250px;
+	padding: 20px 20px;
+	background: #1B1B1B;
+	transition: all 0.3s;
+	text-align: center;
+	position: relative;
+	right: -250px;
+
+	h3 {
+		font-family: $heading-font;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		color: #DFDFDF;
+		margin-bottom: 20px;
+	}
+
+	button {
+		padding: 8px 25px;
+		border: transparent;
+		background: #2B2B2B;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: capitalize;
+		line-height: 25px;
+		text-align: center;
+		border-radius: 4px;
+		color: #fff;
+	}
+}
+
+
+
+@-ms-keyframes spin {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+
+	to {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

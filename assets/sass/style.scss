@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     anoor | Personal Portfolio Resume Template
+Version:        1.0.0
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+
+3. content
+	3.1 about-section
+	3.2 service-section
+	3.3 portfolio-section
+	3.4 testimonial-section
+	3.5 funfact-section
+	3.6 blog-section
+	3.7 contact-section
+	3.8 footer-section 
+	
+4. error-404-section
+----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/preloader";
+@import "components/modal-service";
+@import "components/modal-portfolio";
+@import "components/modal-blog";
+@import "components/mode-dark";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+// components
+
+
+// page
+@import "page/home-default";
+
+@import "page/error-404";
+
+
+
+

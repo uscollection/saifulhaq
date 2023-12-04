@@ -1,0 +1,640 @@
+/* start body bark mode css  */
+
+body {
+    transition: all .5s ease-in-out;
+}
+
+body.dark {
+    background-color: $black;
+
+    .header-section .hrader-topbar .logo .logo-on {
+        transition: all 0.5s ease-in-out;
+        display: none;
+    }
+
+    .header-section .hrader-topbar .logo .logo-two {
+        transition: all 0.5s ease-in-out;
+        display: block;
+    }
+
+    .header-section .side-menu {
+        background: $small-black;
+    }
+
+    .header-section .side-menu ul li a {
+        color: $white;
+    }
+
+    .about-section,
+    .service-section,
+    .portfolio-section,
+    .testimonial-section,
+    .funfact-section,
+    .blog-section,
+    .contact-section,
+    .footer-section {
+        background: $small-black;
+    }
+
+    .about-section .image {
+        background: #2B2B2B;
+    }
+
+    .about-section .image .white-img {
+        display: none;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .about-section .image .dark-img {
+        display: block;
+        transition: all 0.5s ease-in-out;
+        display: block;
+    }
+
+    .about-section .content h2 {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .about-section .content h3 {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .about-section .content p {
+        color: #ccc;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .progras-card svg circle {
+        stroke: #414141;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .progras-card svg circle:last-of-type {
+        stroke: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .progras-card .number h3 {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .progras-card .title h2 {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .section-title h2 {
+        transition: all 0.5s ease-in-out;
+        color: $white;
+    }
+
+    .section-title h3 {
+        transition: all 0.5s ease-in-out;
+        color: $white;
+    }
+
+    .service_item {
+        transition: all 0.5s ease-in-out;
+        border: 1px solid #474747;
+    }
+
+    .service_item .content h2 {
+        transition: all 0.5s ease-in-out;
+        color: $white;
+    }
+
+    .service_item .content p {
+        color: #CCC;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .service_item .icon {
+        background: #2A2A2A;
+    }
+
+    .service_item .icon .white-img {
+        display: none;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .service_item .icon .black-img {
+        display: block;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .portfolio-category ul li button {
+        color: #CCC;
+        border: 1px solid #555353;
+    }
+
+    .portfolio_card h2 {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .testimonial-card {
+        border: 1px solid #474747;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .testimonial-card .top-content .image {
+        border: 2px solid #3A3A3A;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .testimonial-card .top-content .text h2 {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .testimonial-card .top-content .text span {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .testimonial-card h3 {
+        color: #CCC;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .testimonial-wrap .owl-prev,
+    .testimonial-wrap .owl-next {
+        color: #B6B6B6;
+        border: 1px solid #4E4D4D;
+        background: #1B1B1B;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .testimonial-wrap .owl-prev:hover,
+    .testimonial-wrap .owl-next:hover {
+        background: #2A2A2A;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .funfact-section .item h2 {
+        color: $white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .funfact-section .item h4 {
+        color: #ccc;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .blog-wrap .item .content {
+        transition: all 0.5s ease-in-out;
+        border: 1px solid #474747;
+        background: #2A2A2A;
+    }
+
+    .blog-wrap .item .content .date li {
+        color: #ccc;
+        transition: all 0.5s ease-in-out;
+        font-size: 18px;
+    }
+
+    .blog-wrap .item .content .date li:last-child::before {
+        transition: all 0.5s ease-in-out;
+        background: #ccc;
+    }
+
+    .blog-wrap .item .content h2 span {
+        color: $white;
+    }
+
+
+    .blog-wrap .item .content h4 {
+        color: $white;
+    }
+
+    .contact-info .info-item .text h2 {
+        color: $white;
+    }
+
+    .contact-info .info-item .text span {
+        color: #ccc;
+    }
+
+    .contact-info .info-item .icon {
+        background: #2A2A2A;
+    }
+
+    .contact-info .info-item .icon .white-img {
+        transition: all 0.5s ease-in-out;
+        display: none;
+    }
+
+    .contact-info .info-item .icon .black-img {
+        transition: all 0.5s ease-in-out;
+        display: inline-block;
+    }
+
+    .contact-form-area {
+        border: 1px solid #474747;
+        background: #2A2A2A;
+        transition: all 0.5s ease-in-out
+    }
+
+
+
+
+    .contact-form-area form textarea {
+        border: 1px solid #474747;
+        transition: all 0.5s ease-in-out
+    }
+
+    .contact-form-area {
+
+        form input,
+        form select,
+        form textarea {
+            color: $white;
+        }
+
+        form {
+            ::-webkit-input-placeholder {
+                /* Edge */
+                font-style: normal;
+                color: $white;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                font-style: normal;
+                color: $white;
+            }
+
+            ::placeholder {
+                font-style: normal;
+                color: $white;
+            }
+
+
+        }
+
+        .nice-select {
+            color: $white;
+        }
+
+        .form-control:focus {
+            color: $white;
+        }
+    }
+
+    .footer-section {
+        p {
+            color: $white;
+        }
+    }
+
+    .footer-section {
+        ul {
+
+            li {
+                a {
+
+                    color: $white;
+
+                    &::before {
+                        background: $white;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+
+    .switcher-open {
+        background: #2A2A2A;
+        transition: all 0.5s ease-in-out
+    }
+
+    .color-bar {
+        background: #2A2A2A;
+        transition: all 0.5s ease-in-out
+    }
+
+    .color-bar button {
+        background: #1B1B1B;
+        transition: all 0.5s ease-in-out
+    }
+
+    .header-section.sticky_active {
+
+        @media (max-width: 991px) {
+            background: #303030;
+        }
+    }
+
+    .cursor {
+        border: 1.1px solid $light;
+    }
+
+
+
+
+    .modal-services {
+        .modal-dialog .btn-close::before {
+            color: $white;
+        }
+
+        .modal-content {
+            background: #1B1B1B;
+        }
+
+        .service-single-title h3 {
+            color: $white;
+        }
+
+        .service-single-item p {
+            color: #ccc;
+        }
+
+        .service-single-item .service-single-content-des-right ul li {
+            color: $white;
+        }
+
+        .service-single-item .service-single-content-des-right ul li span {
+            color: #ccc;
+        }
+
+        .service-single-item-quote {
+            background: transparent;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .list-widget ul li {
+            color: #ccc;
+        }
+
+        .list-widget ul li:before {
+            color: $black;
+        }
+
+        .service-single-wrap .service-area .service-item {
+            background: #5c5c5c;
+            border: transparent;
+        }
+
+        .service-single-wrap .service-area .service-item h2 {
+            color: $white;
+        }
+
+        .service-contact-area .contact-title h2 {
+            color: $white;
+        }
+
+        .service-contact-area .contact-form {
+            ::-webkit-input-placeholder {
+                /* Edge */
+                font-style: normal;
+                color: $white;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                font-style: normal;
+                color: $white;
+            }
+
+            ::placeholder {
+                font-style: normal;
+                color: $white;
+            }
+
+            .nice-select {
+                color: $white;
+            }
+
+            .nice-select .option {
+                color: #000;
+            }
+
+
+        }
+
+        .service-contact-area .contact-form .form-control {
+            color: $white;
+        }
+
+        .service-contact-area .contact-form .form-control {
+            color: $white;
+        }
+
+
+
+    }
+
+    .modal-portfolio {
+        .modal-dialog .btn-close::before {
+            color: $white;
+        }
+
+        .modal-content {
+            background: #1B1B1B;
+        }
+
+        .project-single-title h3 {
+            color: $white;
+        }
+
+        .project-single-item p {
+            color: #ccc;
+        }
+
+        .project-single-item .project-single-content-des-right ul li {
+            color: $white;
+        }
+
+        .project-single-item .project-single-content-des-right ul li span {
+            color: #ccc;
+        }
+
+        .project-single-item-quote {
+            background: transparent;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .list-widget ul li {
+            color: #ccc;
+        }
+
+        .list-widget ul li:before {
+            color: $black;
+        }
+
+        .service-contact-area .contact-title h2 {
+            color: $white;
+        }
+
+        .service-contact-area .contact-form {
+            ::-webkit-input-placeholder {
+                /* Edge */
+                font-style: normal;
+                color: $white;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                font-style: normal;
+                color: $white;
+            }
+
+            ::placeholder {
+                font-style: normal;
+                color: $white;
+            }
+
+            .nice-select {
+                color: $white;
+            }
+
+            .nice-select .option {
+                color: #000;
+            }
+
+
+        }
+
+        .service-contact-area .contact-form .form-control {
+            color: $white;
+        }
+
+        .service-contact-area .contact-form .form-control {
+            color: $white;
+        }
+
+
+
+    }
+
+
+    .modal-blog {
+        .modal-dialog .btn-close::before {
+            color: $white;
+        }
+
+        .modal-content {
+            background: #1B1B1B;
+        }
+
+        .blog-content .entry-meta ul li {
+            color: $white;
+        }
+
+        .blog-content .entry-meta ul li a {
+            color: $white;
+        }
+
+        .blog-content .post h2 {
+            color: $white;
+        }
+
+        .blog-content .post p {
+            color: #ccc;
+        }
+
+
+        .blog-content .tag-share .tag>span,
+        .blog-content .tag-share-s2 .tag>span {
+            color: $white;
+        }
+
+        .blog-content .tag-share-s2 .tag a {
+            color: $white;
+        }
+
+        .blog-content .tag-share,
+        .blog-content .tag-share-s2 {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .blog-content .author-box .author-name {
+            color: $white;
+        }
+
+        .blog-content .author-box .author-content p {
+            color: #ccc;
+        }
+
+        .blog-content .author-box .social-link a {
+            color: #fff;
+        }
+
+        .blog-content .more-posts .post-control-link {
+            color: $white;
+        }
+
+        .blog-content .more-posts .post-name {
+            color: #ccc;
+        }
+
+        .blog-content .comments-area .comments-title {
+            color: $white;
+        }
+
+        .blog-content .comments-area .comments-meta h4 {
+            color: $white;
+        }
+
+        .blog-content .comments-area .comments-meta h4 span {
+            color: $white;
+        }
+
+        .blog-content .comments-area .comment-main-area p {
+            color: #ccc;
+        }
+
+
+        .blog-content .comments-area .comment-reply-link {
+            color: $white;
+        }
+
+        .blog-content .comment-respond .comment-reply-title {
+            color: $white;
+        }
+
+        .blog-content .comment-respond form {
+            ::-webkit-input-placeholder {
+                /* Edge */
+                font-style: normal;
+                color: $white;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                font-style: normal;
+                color: $white;
+            }
+
+            ::placeholder {
+                font-style: normal;
+                color: $white;
+            }
+        }
+
+        .blog-content .comment-respond form input,
+        .blog-content .comment-respond form textarea {
+            color: #fff;
+        }
+
+        .blog-content .comment-respond .form-submit input {
+            color: #000;
+        }
+
+
+
+    }
+
+
+
+}
