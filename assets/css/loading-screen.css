@@ -1,0 +1,75 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    color: #eee;
+  }
+  
+  /* Loading screen styles */
+  .loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    z-index: 9999;
+  }
+  
+  .line-container {
+    display: flex;
+  }
+  
+  .line {
+    width: 20px;
+    height: 60px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    opacity: 0;
+    transform: scaleY(0);
+    animation: scaleFade 1.5s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+  }
+  
+  .line:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .line:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes scaleFade {
+    0% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+  }
+  
+  /* Hide content when loading */
+  .content {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .loading-screen.loading {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .content.loading {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
